@@ -20,6 +20,9 @@ PRODUCT_RELEASE_NAME := grouper
 # Inherit from grouper device
 $(call inherit-product, device/asus/grouper/device.mk)
 
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
+
 # Inherit some common stuff.
 $(call inherit-product, vendor/du/config/common_full_tablet_wifionly.mk)
 
