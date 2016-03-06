@@ -42,6 +42,9 @@ BOARD_KERNEL_CMDLINE := androidboot.hardware=$(TARGET_BOOTLOADER_BOARD_NAME) and
 TARGET_KERNEL_CONFIG := grouper_defconfig
 TARGET_KERNEL_SOURCE := kernel/asus/grouper
 
+BOARD_USES_GENERIC_AUDIO := false
+BOARD_USES_ALSA_AUDIO := false
+
 # Wi-Fi
 BOARD_WLAN_DEVICE           := bcmdhd
 WPA_SUPPLICANT_VERSION      := VER_0_8_X
