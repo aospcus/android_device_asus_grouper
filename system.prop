@@ -2,6 +2,7 @@
 ro.opengles.version=131072
 debug.hwui.render_dirty_regions=false
 persist.tegra.nvmmlite=1
+ro.audio.monitorOrientation=true
 
 # Don't preload OpenGL in Zygote, the Tegra drivers do not like it
 ro.zygote.disable_gl_preload=true
@@ -24,3 +25,6 @@ persist.tegra.didim.enable=0
 # DRM
 persist.sys.media.legacy-drm=true
 drm.service.enabled=true
+
+# DU Updater
+ro.du.updater=grouper
